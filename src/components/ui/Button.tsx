@@ -25,14 +25,14 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      type={type} // ✅ dipakai
+      type={type} // ✅ FIX
       onClick={onClick}
-      disabled={isLoading} // ✅ dipakai
+      disabled={isLoading} // ✅ FIX
       className={`${baseStyle} ${variantStyle} ${className} ${
         isLoading ? "opacity-50 cursor-not-allowed" : ""
       }`}
     >
-      {isLoading ? "Loading..." : label} {/* ✅ dipakai */}
+      {isLoading ? "Loading..." : label} {/* ✅ FIX */}
     </button>
   );
 };
